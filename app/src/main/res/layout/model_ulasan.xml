@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/fui_transparent"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photoprofile_listulasan"
+                android:layout_width="30dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:civ_border_width="0dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/photoprofile_listulasan"
+                app:layout_constraintBottom_toBottomOf="@id/photoprofile_listulasan"
+                app:layout_constraintStart_toEndOf="@id/photoprofile_listulasan"
+                android:layout_marginStart="15dp"
+                android:id="@+id/username_listUlasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#272727"
+                android:textSize="13dp"
+                android:textAllCaps="false"
+                android:text="Prio dwi sembodo"/>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rating_model"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/photoprofile_listulasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5.0"
+                android:layout_marginTop="5dp"
+                style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09/08/2019"
+                app:layout_constraintStart_toEndOf="@id/rating_model"
+                app:layout_constraintTop_toTopOf="@id/rating_model"
+                app:layout_constraintBottom_toBottomOf="@id/rating_model"
+                android:layout_marginStart="10dp"
+                android:textColor="#272727"
+                android:textSize="10dp"
+                android:id="@+id/timestamp"/>
+
+            <TextView
+                android:id="@+id/text_ulasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:textColor="#272727"
+                android:textStyle="normal"
+                android:lineSpacingExtra="0.01dp"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:maxLines="8"
+                android:ellipsize="end"
+                app:layout_constraintTop_toBottomOf="@id/rating_model"
+                />
+
+            <TextView
+                android:id="@+id/btn_menuModelUlasan"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:text="&#8942;"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/birumuda</item>
+        <item name="colorPrimaryDark">@color/colorClickText</item>
+        <item name="colorAccent">#fd9900</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="searchview" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:hint">Cari kota atau nama wisata </item>
+        <item name="android:textColorHint">#636363</item>
+    </style>
+
+    <style name="drawer" parent="Widget.Design.NavigationView">
+        <item name="android:colorPrimary">@color/birumuda</item>
+        <item name="colorPrimaryDark">@color/colorClickText</item>
+    </style>
+
+    <style name="DialogFullscreen" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="customtab_Text" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="TabCustom" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/customtab_Text</item>
+    </style>
+
+
+
+    <!-- RatingBar !-->
+    <style name="ratingbar" parent="AppTheme">
+        <item name="colorControlActivated">#FD9900</item>
+        <item name="colorAccent">#b4b4b4</item>
+    </style>
+
+    <style name="ratingbarsmile" parent="Widget.MaterialRatingBar.RatingBar.Small">
+        <item name="android:colorAccent">#b4b4b4</item>
+        <item name="android:colorControlActivated">#fd9900</item>
+    </style>
+
+</resources>

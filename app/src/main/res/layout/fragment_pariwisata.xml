@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/lsatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/r"
+            app:layout_scrollFlags="enterAlways"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                style="@style/searchview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/background_searchview"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:paddingStart="15dp"
+                android:layout_height="45dp"
+                android:id="@+id/search_wisata">
+
+            </EditText>
+
+            <HorizontalScrollView
+                android:scrollIndicators="none"
+                android:scrollbars="none"
+                android:scrollbarSize="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingEnd="15dp"
+                android:layout_below="@id/search_wisata"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/lAll"
+                        android:gravity="center"
+                        android:background="@drawable/tablayout_unselector"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="11dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/text_All"
+                            android:textSize="12dp"
+                            android:textColor="#929292"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_toRightOf="@id/lAll"
+                        android:id="@+id/lpandeglang"
+                        android:gravity="center"
+                        android:background="@drawable/tablayout_unselector"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="11dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#929292"
+                            android:id="@+id/text_kotaPandegelang"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kabupaten Pandeglang"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/lpandeglang"
+                        android:id="@+id/lpulau"
+                        android:gravity="center"
+                        android:background="@drawable/tablayout_unselector"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="11dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#929292"
+                            android:id="@+id/text_Pulau"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pulau"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/lpulau"
+                        android:id="@+id/lpantai"
+                        android:gravity="center"
+                        android:background="@drawable/tablayout_unselector"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="11dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#929292"
+                            android:textStyle="bold"
+                            android:id="@+id/text_Pantai"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pantai"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/lpantai"
+                        android:id="@+id/lserang"
+                        android:gravity="center"
+                        android:background="@drawable/tablayout_unselector"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="11dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#929292"
+                            android:textStyle="bold"
+                            android:id="@+id/text_kotaSerang"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kota Serang"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/lserang"
+                        android:id="@+id/lcilegon"
+                        android:gravity="center"
+                        android:background="@drawable/tablayout_unselector"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="11dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#929292"
+                            android:textStyle="bold"
+                            android:id="@+id/text_kotaCilegon"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kota Cilegon"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/lcilegon"
+                        android:id="@+id/lgunung"
+                        android:gravity="center"
+                        android:background="@drawable/tablayout_unselector"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="11dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#929292"
+                            android:textStyle="bold"
+                            android:id="@+id/text_gunung"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gunung"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/lgunung"
+                        android:id="@+id/ltaman"
+                        android:gravity="center"
+                        android:background="@drawable/tablayout_unselector"
+                        android:paddingVertical="8dp"
+                        android:paddingHorizontal="11dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#929292"
+                            android:textStyle="bold"
+                            android:id="@+id/text_Taman"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Taman"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progresBar_pariwisata"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="25dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/recyclerView_pariwisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        app:elevation="4dp"
+        android:id="@+id/satu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+            android:layout_marginStart="15dp"
+            android:id="@+id/close_tentangwisata"/>
+
+        <TextView
+            android:id="@+id/namawisataText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginStart="14dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#272727"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/close_tentangwisata"
+            android:text="Arung Jeram Sungai Ciberang"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/satu"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="@id/satu"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtsatu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang wisata ini"
+                android:textStyle="bold"
+                android:textColor="#272727"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:lineSpacingExtra="2.4dp"
+                android:textColor="#272727"
+                android:textStyle="normal"
+                android:id="@+id/description_wisata"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtsatu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wahana_dan_sarana"
+                app:layout_constraintTop_toBottomOf="@id/description_wisata"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Fasilitas"
+                android:textStyle="bold"
+                android:textColor="#272727"/>
+
+            <TextView
+                android:id="@+id/full_wahanaDanSarana"
+                android:layout_width="match_parent"
+                android:textColor="#272727"
+                android:textStyle="normal"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/wahana_dan_sarana"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="15dp"
+                android:lineSpacingExtra="2.4dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

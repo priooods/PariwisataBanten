@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:overScrollMode="never"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layar_description_detailwisata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/photo_detail_wisata"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_detailWisata"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/navigasi_detailwisata"
+                app:civ_circle_background_color="#fff"
+                app:layout_constraintTop_toTopOf="@id/rll"
+                app:layout_constraintBottom_toTopOf="@id/rll"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="50dp"
+                app:civ_border_color="#E7ECED"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                app:civ_border_width="0.8dp"
+                android:src="@drawable/navigator"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:background="@color/fui_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/photo_detail_wisata">
+
+                <!-- nama wisata !-->
+                <TextView
+                    android:id="@+id/title_nama"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:lineSpacingExtra="0.8dp"
+                    android:text="Pantai Tanjung Lesung"
+                    android:textColor="#090909"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:transitionName="sharedElement"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/title_nama"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_maps"
+                    android:id="@+id/map_icon"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/title_nama"
+                    app:layout_constraintStart_toEndOf="@id/map_icon"
+                    android:id="@+id/titledetail_alamat_wisata"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#494949"
+                    android:textStyle="normal"
+                    android:textSize="13dp"
+                    android:text="Rangkas Bitung"/>
+
+                <!-- deskripsi wisata !-->
+                <RelativeLayout
+                    android:id="@+id/r_desc"
+                    android:layout_marginTop="38dp"
+                    app:layout_constraintTop_toBottomOf="@id/horizontal_scroll"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/iy"
+                        android:textSize="16dp"
+                        android:letterSpacing="0.03"
+                        android:textStyle="bold"
+                        android:textColor="#202020"
+                        android:text="Tentang wisata ini"
+                        android:layout_marginStart="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="25dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_go"
+                        android:id="@+id/checkAll_detailwisata"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/desc_detailwisata"
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="2.4dp"
+                        android:maxLines="3"
+                        android:text="disini description wisata"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_below="@id/iy"
+                        android:textColor="#090909"
+                        android:textSize="12dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="50dp"/>
+
+                </RelativeLayout>
+
+
+                <!-- list photo wisata !-->
+                <LinearLayout
+                    android:id="@+id/linear_keungulanwisata"
+
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintTop_toBottomOf="@id/r_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recycler_gambarwisata"
+                        >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:scrollbarSize="0dp"
+                    android:id="@+id/horizontal_scroll"
+                    app:layout_constraintTop_toBottomOf="@id/map_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:scrollIndicators="none"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:paddingStart="15dp"
+                        android:paddingEnd="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/linear_hargadetail"
+                            android:layout_width="100dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                app:layout_constraintStart_toStartOf="@id/hargatiket_wisata"
+                                app:layout_constraintEnd_toEndOf="@id/hargatiket_wisata"
+                                app:layout_constraintTop_toBottomOf="@id/title_nama"
+                                android:scaleType="fitXY"
+                                android:layout_width="14dp"
+                                android:id="@+id/icon_coin"
+                                android:layout_height="14dp"
+                                android:src="@drawable/icon_dollar"/>
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintTop_toBottomOf="@id/icon_coin"
+                                android:id="@+id/hargatiket_wisata"
+                                android:layout_width="wrap_content"
+                                android:textColor="#494949"
+                                android:text="gratis"
+                                android:maxLines="2"
+                                android:textStyle="normal"
+                                android:textSize="10dp"
+                                android:letterSpacing="0.09"
+                                android:textAllCaps="false"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <View
+                            app:layout_constraintStart_toEndOf="@id/linear_hargadetail"
+                            app:layout_constraintTop_toTopOf="@id/linear_hargadetail"
+                            app:layout_constraintBottom_toBottomOf="@id/linear_hargadetail"
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dp"
+                            android:background="@color/colorView"
+                            android:id="@+id/view_alamat"/>
+
+                        <LinearLayout
+                            android:id="@+id/linear_suka"
+                            app:layout_constraintStart_toEndOf="@id/view_alamat"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                app:layout_constraintBottom_toTopOf="@id/jumlah_suka_detail"
+                                app:layout_constraintTop_toBottomOf="@id/title_nama"
+                                android:id="@+id/ic_suka"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_lovered"/>
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#494949"
+                                android:id="@+id/jumlah_suka_detail"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="suka"/>
+
+                        </LinearLayout>
+
+                        <View
+                            app:layout_constraintStart_toEndOf="@id/linear_suka"
+                            app:layout_constraintTop_toTopOf="@id/linear_suka"
+                            app:layout_constraintBottom_toBottomOf="@id/linear_suka"
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dp"
+                            android:background="@color/colorView"
+                            android:id="@+id/view_harga"/>
+
+                        <LinearLayout
+                            android:id="@+id/linear_ulasan"
+                            app:layout_constraintStart_toEndOf="@id/view_harga"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                app:layout_constraintTop_toBottomOf="@id/title_nama"
+                                app:layout_constraintStart_toStartOf="@id/titledetail_alamat_wisata"
+                                app:layout_constraintEnd_toEndOf="@id/titledetail_alamat_wisata"
+                                android:layout_gravity="center"
+                                android:id="@+id/ic_map"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_ulasan"/>
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#272727"
+                                android:textSize="10dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="parent"
+                                android:text="Ulasan"
+                                android:id="@+id/jumlah_ulasan_detail"/>
+
+                        </LinearLayout>
+
+                        <View
+                            app:layout_constraintStart_toEndOf="@id/linear_ulasan"
+                            app:layout_constraintTop_toTopOf="@id/linear_ulasan"
+                            app:layout_constraintBottom_toBottomOf="@id/linear_ulasan"
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dp"
+                            android:background="@color/colorView"
+                            android:id="@+id/view_ulasan"/>
+
+                        <!-- rating wisata !-->
+                        <LinearLayout
+                            android:layout_marginStart="15dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/view_ulasan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0,0"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:textSize="13dp"
+                                android:id="@+id/jumlah_rating"/>
+
+                            <androidx.appcompat.widget.AppCompatRatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rating_total"
+                                android:isIndicator="true"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:numStars="5"/>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0,0"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:textSize="13dp"
+                                android:id="@+id/jumlah_userRating"/>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </HorizontalScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rll_ulasan"
+            app:layout_constraintTop_toBottomOf="@id/layar_description_detailwisata"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="13dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_tambahUlasan"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="start">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ulasan wisatawan"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.03"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sampaikan pendapat Anda"
+                    android:textColor="#707070"
+                    android:textSize="11dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ulasan_wisatawan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/linear_tambahUlasan"
+                app:layout_constraintBottom_toBottomOf="@id/linear_tambahUlasan"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Tulis ulasan"
+                android:textColor="#0E8C9B"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/linear_tambahUlasan"
+                android:id="@+id/recycler_ulasan">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/lihatsemuaUlasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat semua ulasan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_ulasan"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/belumadaulasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum ada ulasan nya nih, yukk tulis ulasan kamu"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_tambahUlasan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

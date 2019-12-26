@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "342886248578",
+    "firebase_url": "https://pariwisataserang-6bcae.firebaseio.com",
+    "project_id": "pariwisataserang-6bcae",
+    "storage_bucket": "pariwisataserang-6bcae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342886248578:android:db6b0354e2e920d74d849b",
+        "android_client_info": {
+          "package_name": "com.prio.pariwisataserang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342886248578-ojqfmb8p7dv0jnhggueasmqi66gv8vos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzra2jrzLBci1bBC0B0BnzM3QgkfVjSl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342886248578-ojqfmb8p7dv0jnhggueasmqi66gv8vos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

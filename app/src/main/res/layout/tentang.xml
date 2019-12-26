@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/l"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/back_tentang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/back_tentang"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Tentang"
+            android:textColor="@color/colorClickText"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:letterSpacing="0.02"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="13dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="0.15dp"
+        android:id="@+id/iu"
+        android:textColor="@color/colorClickText"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.02"
+        android:layout_height="wrap_content"
+        android:text="          Pariwisata Banten adalah applikasi yang dibuat untuk membantu semua wisatawan yang sedang atau ingin berwisata di Banten. Pariwisata Banten dilengkapi dengan fitur yang simple dan tampilan yang menarik untuk mempermudah setiap pengguna mencari semua daftar wisata yang ada. Selain itu semua event dan juga semua destinasi wisata yang tersedia selalu di update sesuai dengan kondisi sebenarnya."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/l"/>
+
+    <TextView
+        android:id="@+id/du"
+        android:textColor="@color/colorClickText"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="0.2dp"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:text="          Semua ulasan dan Masukan yang diberikan oleh kalian akan menjadi acuan bagi kami untuk terus memperbaiki serta menyempurnakan applikasi ini supaya dapat mempermudah para wisatawan yang sedang atau ingin berwisata di Banten"
+        />
+
+    <TextView
+        android:id="@+id/w"
+        app:layout_constraintTop_toBottomOf="@id/du"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click alamat e-mail dibawah untuk mengirim kritik dan saran anda kepada kami :"
+        android:textStyle="normal"
+        android:textColor="@color/colorClickText"/>
+
+    <TextView
+        android:id="@+id/gomail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/w"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:text="priodwisembodo23@gmail.com"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

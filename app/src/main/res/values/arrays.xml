@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Beranda</item>
+        <item>Tentang</item>
+        <item>Pengaturan</item>
+        <item>Account</item>
+        <item />
+        <item>Log Out</item>
+    </string-array>
+
+   
+
+</resources>

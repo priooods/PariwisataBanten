@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PariwisataBanten</string>
+    <string name="namaapp">Destinasi</string>
+    <string name="signin">signIn</string>
+    <string name="beranda">Beranda</string>
+    <string name="account">Account</string>
+    <string name="logout">Logout</string>
+    <string name="email">priodwisembodo23@gmail.com</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="google_maps_API_key">AIzaSyA3OoElEUhbSW3C8JhrW1w3cEt1Tr3MO2Y</string>
+
+    <string name="facebook_app_id">727327044402855</string>
+    <string name="fb_login_protocol_scheme">fb727327044402855</string>
+
+
+
+</resources>
