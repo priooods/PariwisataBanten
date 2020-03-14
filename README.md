@@ -8,6 +8,7 @@ wisata yang dikhususkan adalah wisata yang terdapat di Banten.
 3. Tambah list favorite dan kesukaan wisata.
 4. Report ke email developer ( ke email saya ).
 5. User Interface responsive
+6. Event kepariwisataan di Banten
 
 
 # Link
